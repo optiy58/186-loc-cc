@@ -1,0 +1,36 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f4f4f4; color: #1a1a1a; line-height: 1.6;
+}
+header { background: #fff; border-bottom: 3px solid #c0392b; }
+.masthead { max-width: 1080px; margin: 0 auto; padding: 1.2rem 1rem 0.4rem; }
+.masthead h1 { font-size: 1.8rem; letter-spacing: 2px; }
+.masthead h1::before { content: ""; display: inline-block; width: 10px; height: 1.8rem; background: #c0392b; margin-right: 10px; vertical-align: -4px; }
+.date { color: #888; font-size: 0.85rem; }
+.tabs { max-width: 1080px; margin: 0 auto; padding: 0.6rem 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tab {
+  border: 1px solid #ddd; background: #fff; padding: 0.35rem 1.1rem;
+  border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+}
+.tab.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+main { max-width: 1080px; margin: 1.5rem auto; padding: 0 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.card {
+  background: #fff; border-radius: 8px; padding: 1rem 1.1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07); transition: transform .15s;
+}
+.card:hover { transform: translateY(-2px); }
+.card .tag { font-size: 0.72rem; color: #c0392b; font-weight: 600; letter-spacing: 1px; }
+.card h2 { font-size: 1.05rem; margin: 0.35rem 0; }
+.card p { font-size: 0.86rem; color: #555; }
+.card .meta { margin-top: 0.6rem; font-size: 0.75rem; color: #999; }
+.empty { text-align: center; color: #999; padding: 3rem 0; }
+.hidden { display: none; }
+footer { text-align: center; color: #999; font-size: 0.8rem; padding: 2rem 0; }
+footer a { color: inherit; }
+@media (prefers-color-scheme: dark) {
+  body { background: #141414; color: #ddd; }
+  header, .card, .tab { background: #1e1e1e; border-color: #333; }
+  .card p { color: #aaa; }
+}
